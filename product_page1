@@ -78,3 +78,22 @@
             <h1 class="display-4">New Arrivals</h1>
         </div>
     </header>
+    <div class="row">
+        <div class="col col-lg-3 text-start">
+            <h3>Clothing</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="forlater" class="nav-link text-muted">Monitors</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="forlater" class="nav-link text-muted">Accessories</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="forlater" class="nav-link text-muted">Components</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
