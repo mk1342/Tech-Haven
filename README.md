@@ -2,6 +2,8 @@
 
 One or two paragraphs providing an overview of your project. Tell us about your project.
 
+Tech Haven isn't just a run-of-the-mill tech store. It's a treasure trove of peripherals, gadgets, and all things tech, brought to you by trusted vendors from all over the world. Every $10 or more purchase earns you points that can be redeemed for amazing tech gear and early access to only the hottest new products. Points can also 
+
 Essentially, this part is your sales pitch.
  
 ## Design Process
@@ -9,7 +11,10 @@ Essentially, this part is your sales pitch.
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+- As a customer of the website, I want to see the price and the rating of the items i want to buy from the checkout area so that i do not make a mistake when buying an item
+- As a customer of the website, I want to see how the product looks like through images so that I can make calculated decisions when buying an item
+- As a seller of the website, I want the website to be seamless and user-friendly with its navigation and its features so that there will be more potential customers to help grow my business
+- As a vendor I would like to provide customers with a 3d model so that they can get a better idea of what my products would look like and be more inclined to purchase them
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
 These files should themselves either be included as a pdf file in the project itself (in an separate directory)
@@ -32,8 +37,6 @@ In addition, you may also use this section to discuss plans for additional featu
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
 - [Bootstrap](https://getbootstrap.com/)
     - The project uses **Bootstrap** to simplify html iteration
 
@@ -59,9 +62,10 @@ If this section grows too long, you may want to split it off into a separate fil
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos used in this site were obtained from these websites
+
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- We received inspiration for this project from [UNIQLO's website](https://www.uniqlo.com/sg/en/) 
 
