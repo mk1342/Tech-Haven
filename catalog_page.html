@@ -120,7 +120,7 @@
                     ASUS VP249QGR Gaming Monitor
                 </p>
                 <small class="text-center mb-5">
-                    $250
+                    <p id="output1" class="fw-bold">SGD$<p id="initial-price1">250</p><p id="product-prices1"></p></p>    
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -138,17 +138,22 @@
             <a href="forlater">
                 <img src="images/pc_picture2.png" class="card-img-top" 
                 height="300" alt="Product">
-                
             </a>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
                 <p class="card-text fw-bold" >
                     ROG STRIX XG17AHP
                 </p>
                 <small class="text-center mb-5">
-                    SGD $250
-                   <i class="fa-solid fa-star"></i>
-                    4.5
+                    <p id="output2" class="fw-bold">SGD$<p id="initial-price2">500</p><p id="product-prices2"></p></p>    
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (33)
                 </small>
+                <a href="product_page1.html" class="btn btn-outline-dark my-5 mt-auto">Buy Now</a>
+
             </div>
 
         </div>
@@ -157,25 +162,72 @@
             <a href="forlater">
                 <img src="images/pc_picture3.avif" class="card-img-top" 
                 height="300" alt="Product">
-                
             </a>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
                 <p class="card-text fw-bold" >
                     27" Bezel-less LED Monitor SR350 FHD
                 </p>
                 <small class="text-center mb-5">
-                    SGD $250
-                   <i class="fa-solid fa-star"></i>
-                    4.5
+                    <p id="output3" class="fw-bold">SGD$<p id="initial-price3">750</p><p id="product-prices3"></p></p>    
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (33)
                 </small>
+                <a href="product_page1.html" class="btn btn-outline-dark my-5 mt-auto">Buy Now</a>
+
             </div>
 
         </div>
+
 
     </div>
     <div class="text-center">
     <a href="product_page1.html" class="btn btn-outline-dark my-5">View All Products</a>
     </div>
-    <script rel="script" src="code-for-api.js"></script>
+    <script>
+        let exchangerates = []
+    function getLatest(options) {
+        fetch(`https://v6.exchangerate-api.com/v6/ac460c7eee861afbf2aa94ab/latest/SGD`)
+            .then(function(resp) {
+                return resp.json();
+            })
+            .then(function(data){
+                console.log(data)
+                exchangerates = data.conversion_rates;})
+            
+    }
+    getLatest()
+    var count = 0
+    function getOption() {
+        selectElement = document.querySelector('#country');
+        output1 = selectElement.value;
+        let new_num1 = document.getElementById('product-price1')
+        let num1 = parseInt(document.getElementById('initial-price1').textContent);
+        var to_remove_num = document.getElementById('initial-price1');
+        to_remove_num.remove();
+        new_num.textContent = (exchangerates[output] * num1).toFixed(2);
+        document.getElementById('output1').textContent = '$' + output1
+
+        output1 = selectElement.value;
+        let new_num2 = document.getElementById('product-price2')
+        let num2 = parseInt(document.getElementById('initial-price2').textContent);
+        var to_remove_num = document.getElementById('initial-price2');
+        to_remove_num.remove();
+        new_num.textContent = (exchangerates[output] * num1).toFixed(2);
+        document.getElementById('output2').textContent = '$' + output
+
+        output1 = selectElement.value;
+        let new_num3 = document.getElementById('product-price3')
+        let num3 = parseInt(document.getElementById('initial-price3').textContent);
+        var to_remove_num = document.getElementById('initial-price3');
+        to_remove_num.remove();
+        new_num.textContent = (exchangerates[output] * num1).toFixed(2);
+        document.getElementById('output3').textContent = '$' + output3
+
+    }
+    </script>
 </body>
 </html>
