@@ -36,21 +36,6 @@
                     <a class="navbar-brand d-none d-lg-block" href="catalog_page.html">Tech Haven</a>
                     <!--code for navbar my profile link-->
                     <ul class="navbar-nav">
-                        <li class="d-flex align-items-center">
-                            <div>
-                                <select id="country">
-                                    <option value="" disabled selected>Select your location</option>
-                                    <option value="BRL">Brazil (BRL)</option>
-                                    <option value="CNY">China (CNY)</option>
-                                    <option value="INR">India (INR)</option> 
-                                    <option value="SGD">Singapore (SGD)</option>          
-                                    <option value="SAR">Saudi Arabia (SAR)</option>
-                                    <option value="GBP">United Kingdom (GBP)</option>
-                                    <option value="USD">United States (USD)</option>  
-                                </select>
-                                <button class="" onclick="getOption(),multiplyBy()" value="Multiply"> confirm changes </button>
-                            </div>
-                        </li>
                         <li class="nav-item d-flex align-items-center">
                             <a class="nav-link mx-2" href="profile_page.html">
                                 <i class="fa-solid fa-user"></i>
@@ -86,7 +71,21 @@
                                 Components
                             </a>
                         </li>
-    
+                        <li class="nav-item ">
+                        <div>
+                            <select id="country">
+                                <option disabled selected>Select your location</option>
+                                <option value="BRL">Brazil (BRL)</option>
+                                <option value="CNY">China (CNY)</option>
+                                <option value="INR">India (INR)</option> 
+                                <option value="SGD">Singapore (SGD)</option>          
+                                <option value="SAR">Saudi Arabia (SAR)</option>
+                                <option value="GBP">United Kingdom (GBP)</option>
+                                <option value="USD">United States (USD)</option>  
+                            </select>
+                            <button class="btn btn-outline-dark" onclick="getOption(),multiplyBy()" value="Multiply"> Confirm Changes </button>
+                        </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -115,17 +114,22 @@
             <a href="forlater">
                 <img src="images/pc_picture1.png" class="card-img-top" 
                 height="300" alt="Product">
-                
             </a>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
                 <p class="card-text fw-bold" >
                     ASUS VP249QGR Gaming Monitor
                 </p>
                 <small class="text-center mb-5">
-                    SGD $250
-                   <i class="fa-solid fa-star"></i>
-                    4.5
+                    $250
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (33)
                 </small>
+                <a href="product_page1.html" class="btn btn-outline-dark my-5 mt-auto">Buy Now</a>
+
             </div>
 
         </div>

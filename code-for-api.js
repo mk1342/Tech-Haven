@@ -14,7 +14,7 @@ let exchangerates = []
     function getOption() {
     selectElement = document.querySelector('#country');
     output = selectElement.value;
-    
+    let new_num = document.getElementById('product-prices')
     let num2 = parseInt(document.getElementById('initial-price').textContent);
     if (isNaN(num2)) {
         console.error("Invalid initial price");
@@ -24,5 +24,8 @@ let exchangerates = []
         console.error("Exchange rates not available yet");
         return;
     }
-    document.getElementById('product-prices').textContent =(exchangerates[output] * num2).toFixed(2);
+    var to_remove_num = document.getElementById('initial-price')
+    to_remove_num.remove();
+    new_num.textContent = (exchangerates[output] * num2).toFixed(2);
+    
 }
