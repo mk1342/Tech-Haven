@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+        <select id="country">
+            <option value="" disabled selected>Select your location</option>
+            <option value="BRL">Brazil (BRL)</option>
+            <option value="CNY">China (CNY)</option>
+            <option value="INR">India (INR)</option> 
+            <option value="SGD">Singapore (SGD)</option>          
+            <option value="SAR">Saudi Arabia (SAR)</option>
+            <option value="GBP">United Kingdom (GBP)</option>
+            <option value="USD">United States (USD)</option>  
+        </select>
+        <button onclick="getOption(),multiplyBy()" value="Multiply"> Check option </button>
+        <div>
+            <p id="initial-price">100</p>  
+            <p id="product-prices">   </p>
+        </div>
+    <script rel="script" src="code-for-api.js"></script>
+</body>
+</html>
+  

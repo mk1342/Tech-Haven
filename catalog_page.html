@@ -36,6 +36,21 @@
                     <a class="navbar-brand d-none d-lg-block" href="catalog_page.html">Tech Haven</a>
                     <!--code for navbar my profile link-->
                     <ul class="navbar-nav">
+                        <li class="d-flex align-items-center">
+                            <div>
+                                <select id="country">
+                                    <option value="" disabled selected>Select your location</option>
+                                    <option value="BRL">Brazil (BRL)</option>
+                                    <option value="CNY">China (CNY)</option>
+                                    <option value="INR">India (INR)</option> 
+                                    <option value="SGD">Singapore (SGD)</option>          
+                                    <option value="SAR">Saudi Arabia (SAR)</option>
+                                    <option value="GBP">United Kingdom (GBP)</option>
+                                    <option value="USD">United States (USD)</option>  
+                                </select>
+                                <button class="" onclick="getOption(),multiplyBy()" value="Multiply"> confirm changes </button>
+                            </div>
+                        </li>
                         <li class="nav-item d-flex align-items-center">
                             <a class="nav-link mx-2" href="profile_page.html">
                                 <i class="fa-solid fa-user"></i>
@@ -157,5 +172,6 @@
     <div class="text-center">
     <a href="product_page1.html" class="btn btn-outline-dark my-5">View All Products</a>
     </div>
+    <script rel="script" src="code-for-api.js"></script>
 </body>
 </html>
