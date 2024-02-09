@@ -9,13 +9,13 @@ let exchangerates = []
                 exchangerates = data.conversion_rates;})
             
     }
-
     getLatest()
+    var count = 0
     function getOption() {
     selectElement = document.querySelector('#country');
-    output = selectElement.value;
-    let new_num = document.getElementById('product-prices')
-    let num2 = parseInt(document.getElementById('initial-price').textContent);
+    output1 = selectElement.value;
+    let new_num = document.getElementById('product-price1')
+    let num1 = parseInt(document.getElementById('initial-price1').textContent);
     if (isNaN(num2)) {
         console.error("Invalid initial price");
         return;
@@ -24,8 +24,9 @@ let exchangerates = []
         console.error("Exchange rates not available yet");
         return;
     }
-    var to_remove_num = document.getElementById('initial-price')
+    var to_remove_num = document.getElementById(list_of_ids[2]);
     to_remove_num.remove();
-    new_num.textContent = (exchangerates[output] * num2).toFixed(2);
-    
+    new_num.textContent = (exchangerates[output] * num1).toFixed(2);
+    document.getElementById('output1').textContent = '$' + output1
+    count += 3
 }

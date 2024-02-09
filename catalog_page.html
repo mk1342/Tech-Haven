@@ -187,6 +187,7 @@
     <div class="text-center">
     <a href="product_page1.html" class="btn btn-outline-dark my-5">View All Products</a>
     </div>
+    
     <script>
         let exchangerates = []
     function getLatest(options) {
@@ -204,28 +205,29 @@
     function getOption() {
         selectElement = document.querySelector('#country');
         output1 = selectElement.value;
-        let new_num1 = document.getElementById('product-price1')
+        
+        let new_num1 = document.getElementById('product-prices1')
         let num1 = parseInt(document.getElementById('initial-price1').textContent);
         var to_remove_num = document.getElementById('initial-price1');
         to_remove_num.remove();
-        new_num.textContent = (exchangerates[output] * num1).toFixed(2);
-        document.getElementById('output1').textContent = '$' + output1
+        new_num1.textContent = (exchangerates[output1] * num1).toFixed(2);
+        document.getElementById('output1').textContent =  output1 + '$'
 
-        output1 = selectElement.value;
-        let new_num2 = document.getElementById('product-price2')
+        output2 = output1;
+        let new_num2 = document.getElementById('product-prices2')
         let num2 = parseInt(document.getElementById('initial-price2').textContent);
-        var to_remove_num = document.getElementById('initial-price2');
-        to_remove_num.remove();
-        new_num.textContent = (exchangerates[output] * num1).toFixed(2);
-        document.getElementById('output2').textContent = '$' + output
+        var to_remove_num1 = document.getElementById('initial-price2');
+        to_remove_num1.remove();
+        new_num2.textContent = (exchangerates[output2] * num2).toFixed(2);
+        document.getElementById('output2').textContent =  output2 + '$'
 
-        output1 = selectElement.value;
-        let new_num3 = document.getElementById('product-price3')
+        output3 = output1;
+        let new_num3 = document.getElementById('product-prices3')
         let num3 = parseInt(document.getElementById('initial-price3').textContent);
-        var to_remove_num = document.getElementById('initial-price3');
-        to_remove_num.remove();
-        new_num.textContent = (exchangerates[output] * num1).toFixed(2);
-        document.getElementById('output3').textContent = '$' + output3
+        var to_remove_num2 = document.getElementById('initial-price3');
+        to_remove_num2.remove();
+        new_num3.textContent = (exchangerates[output3] * num3).toFixed(2);
+        document.getElementById('output3').textContent =  output3 + '$'
 
     }
     </script>
